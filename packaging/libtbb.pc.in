@@ -1,0 +1,10 @@
+prefix=@PREFIX@
+libdir=@LIB_INSTALL_DIR@
+includedir=@INCLUDE_INSTALL_DIR@
+
+Name: libtbb
+Description: Development package to use Intel® Threading Building Blocks
+Version: @VERSION@
+Requires:
+Libs: -L${libdir} -ltbb
+Cflags: -I${includedir}/tbb
